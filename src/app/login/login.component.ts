@@ -20,5 +20,4 @@ export class LoginComponent implements OnInit {
   ingresar() {
     this._router.navigate(['/dashboard'])
   }
-
 }
