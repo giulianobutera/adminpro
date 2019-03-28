@@ -31,12 +31,13 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Imagen de perfil</h4>
-                <div class="card-body" align="center">
+                <div class="text-center">
                     <img *ngIf="!imagenTemp" [src]="usuario.img | imagen" class="w150">
                     <img *ngIf="imagenTemp" [src]="imagenTemp" class="w150">
                 </div>
                 <h6 class="card-subtitle">Actualizar imagen</h6>
                 <input (change)="seleccionImagen($event.target.files[0])" type="file">
+                <br>
                 <button (click)="cambiarImagen()" [disabled]="!imagenSubir" type="button" class="btn btn-success waves-effect waves-light m-r-10 float-right">
                     <i class="fa fa-save mr-1"></i>
                     Actualizar
