@@ -33,9 +33,9 @@
                     <h3 class="card-title col-6">Médicos registrados ( <small>{{ totalRegistros }}</small> )</h3>
                     <div class="text-right col-6">
                         <button [routerLink]="['/medico', 'nuevo']" class="btn btn-primary waves-effect waves-light btn-rounded">
-                        <i class="fa fa-plus"></i>
-                        Crear Médico
-                      </button>
+                            <i class="fa fa-plus"></i>
+                            Crear Médico
+                        </button>
                     </div>
                 </div>
 
@@ -61,11 +61,11 @@
                             </td>
                             <td class="text-center">
                                 <button [routerLink]="['/medico', medico._id]" class="btn btn-primary mr-1">
-                              <i class="fa fa-edit"></i>
-                            </button>
+                                    <i class="fa fa-edit"></i>
+                                </button>
                                 <button (click)="borrarMedico(medico)" class="btn btn-danger">
-                              <i class="fa fa-trash-o"></i>
-                            </button>
+                                    <i class="fa fa-trash-o"></i>
+                                </button>
                             </td>
                         </tr>
                     </tbody>
